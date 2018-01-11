@@ -1,0 +1,8 @@
+[user]
+	name = kentwata
+	email = kentwata@yahoo-corp.jp
+
+[alias]
+	st = status
+	co = checkout
+  gadd = "git add"
