@@ -122,15 +122,15 @@
 
   "React: class skeleton":
     prefix: "rcd"
-    body: "import React, { PropTypes } from 'react'\n\nclass $1 extends React.Component {\n\trender () {\n\t\t<div>\n\t\t</div>\n\t}\n}\n\nexport default ${1};"
+    body: "import React from 'react';\nimport PropTypes from 'prop-types';\n\nclass $1 extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n$1.propTypes = {\n\thoge: PropTypes.string\n};\n\nexport default $1;"
 
   "React: component skeleton (ES6)":
     prefix: "rcc6"
-    body: "import React, { PropTypes } from \'react\';\n\nconst $1 = React.createClass({\n\trender () {\n\t\treturn (\n\t\n\t\t)\n\t}\n})\n\nexport default ${1};"
+    body: "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst $1 = React.createClass({\n\trender () {\n\t\treturn (\n\t\n\t\t)\n\t}\n})\n\n$1.propTypes = {\n\thoge: PropTypes.string\n};\n\nexport default ${1};"
 
   "React: stateless component (ES6)":
     prefix: "rcs"
-    body: "import React, {PropTypes} from \'react\';\n\nconst $1 = (${2:props}) => (\n\t<div>\n\t</div>\n);\nexport default ${1};"
+    body: "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst $1 = (${2:props}) => (\n\t<div>\n\t</div>\n);\n\n$1.propTypes = {\n\thoge: PropTypes.string\n};\n\nexport default ${1};"
 
   "React: render() { return ... } (ES6)":
     prefix: "ren6"
